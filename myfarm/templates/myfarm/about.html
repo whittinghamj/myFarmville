@@ -1,12 +1,12 @@
 {% extends "myfarm/base.html" %}
 
 {% block content %}
-        <h1>About Page!</h1>
-
-<div class="col-md-4">
-          <div class="content-section" style="background-color: mediumaquamarine">
+<div>
+    <!-- Sidebar Categories -->
+    <div class="col-md-4">
+        <div class="content-section" style="background-color: mediumaquamarine">
             <h3>Categories</h3>
-              <ul class="list-group">
+            <ul class="list-group">
                 <li class="list-group-item list-group-item-light"><a href="/product-category/fruits/">Fruits</a></li>
                 <li class="list-group-item list-group-item-light">Berries</li>
                 <li class="list-group-item list-group-item-light">Vegetables</li>
@@ -15,20 +15,84 @@
                 <li class="list-group-item list-group-item-light">Tea</li>
                 <li class="list-group-item list-group-item-light">Nuts</li>
                 <li class="list-group-item list-group-item-light">oil</li>
-              </ul>
+            </ul>
             </p>
-          </div>
-</div>
-<div>
-        <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Mushrooms</li>
-        </ul>
-</div>
-<div>
-    <div class="tbay-offcanvas-body">
+        </div>
+    </div>
 
-        <nav id="tbay-mobile-menu-navbar" class="navbar navbar-offcanvas navbar-static">
-            <div id="main-mobile-menu-mmenu" class="menu-category-menu-image-container">
+    <div>
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Filter </legend>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectbasic">Select Place/City</label>
+                    <div class="col-md-4">
+                        <select id="selectbasic" name="selectbasic" class="form-control">
+                            <option value="1">Option one</option>
+                            <option value="2">Option two</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Button Drop Down -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="buttondropdown">Select Types of Product</label>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="placeholder" type="text">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Action
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">Option one</a></li>
+                                    <li><a href="#">Option two</a></li>
+                                    <li><a href="#">Option three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multiple Checkboxes -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="checkboxes">Special Requests</label>
+                    <div class="col-md-4">
+                        <div class="checkbox">
+                            <label for="checkboxes-0">
+                                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                                GMO Free
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="checkboxes-1">
+                                <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+                                Organic
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="singlebutton">Search</label>
+                    <div class="col-md-4">
+                        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Apply</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div>
+    <div>
+        <div class="tbay-offcanvas-body">
+            <nav id="tbay-mobile-menu-navbar" class="navbar navbar-offcanvas navbar-static">
+                <div id="main-mobile-menu-mmenu" class="menu-category-menu-image-container">
                     <ul id="main-mobile-menu-mmenu-wrapper" class="menu"><li class=" menu-item menu-item-type-taxonomy menu-item-object-product_cat  menu-item-2623"><a href="https://green-mart.online/product-category/fruits/"><i class="fa icofont-apple"></i>Fruits</a></li>
                         <li class=" menu-item menu-item-type-taxonomy menu-item-object-product_cat  menu-item-3203"><a href="https://green-mart.online/product-category/berries/"><i class="fa icofont-cherry"></i>Berries</a></li>
                         <li class=" menu-item menu-item-type-taxonomy menu-item-object-product_cat current-menu-item active menu-item-2609"><a href="https://green-mart.online/product-category/vegetables/"><i class="fa icofont-broccoli"></i>Vegetables</a></li>
@@ -54,10 +118,14 @@
                         <li class=" menu-item menu-item-type-taxonomy menu-item-object-product_cat  menu-item-10763"><a href="https://green-mart.online/product-category/household-goods/"><i class="fa icofont-mop"></i>Household goods</a></li>
                         <li class=" menu-item menu-item-type-taxonomy menu-item-object-product_cat  menu-item-12193"><a href="https://green-mart.online/product-category/hygiene-products/"><i class="fa icofont-bathtub"></i>Hygiene products</a></li>
                     </ul>
-            </div>
-        </nav>
-
-
+                </div>
+            </nav>
+        </div>
     </div>
+</div>
+<div>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-light">Mushrooms</li>
+    </ul>
 </div>
 {% endblock content %}

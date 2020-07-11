@@ -122,4 +122,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #is where our uploaded files will be located on a file system
+MEDIA_URL = '/media/' #to access it(media) from our browser
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'myfarm-home'
+LOGIN_URL = 'login'
