@@ -1,93 +1,30 @@
 {% extends "myfarm/base.html" %}
+{% load static %}
 
 {% block content %}
+
+
 <div>
-    <!-- Sidebar Categories -->
-    <div class="col-md-4">
-        <div class="content-section" style="background-color: mediumaquamarine">
-            <h3>Categories</h3>
-            <ul class="list-group">
-                <li class="list-group-item list-group-item-light"><a href="/product-category/fruits/">Fruits</a></li>
-                <li class="list-group-item list-group-item-light">Berries</li>
-                <li class="list-group-item list-group-item-light">Vegetables</li>
-                <li class="list-group-item list-group-item-light">Mushrooms</li>
-                <li class="list-group-item list-group-item-light">Rice</li>
-                <li class="list-group-item list-group-item-light">Tea</li>
-                <li class="list-group-item list-group-item-light">Nuts</li>
-                <li class="list-group-item list-group-item-light">oil</li>
-            </ul>
-            </p>
-        </div>
-    </div>
+    <h1>Motivation/Konzept:​</h1>
+    <p>Um Transparenz in der Landwirtschaft zu schaffen - für Händler und Landwirte.
+        Die wenigsten Landwirte sind im Netz aufzufinden. Daher sind Händler davon abhängig wen und wie viele sie in ihrem Umkreis kennen, die Ihnen helfen den geeigneten Landwirt zu finden, der die Produkte in der benötigten Menge zum gewünschten Preis anbietet.
+        Die Landwirte haben das Problem, dass sie darauf
+        angewiesen sind, von einem Händler kontaktiert zu
+        werden, denn sie selber haben meist keine Zeit oder
+        Kenntnisse oder gar die Mittel ihr eigenes Marketing im
+        Internet zu machen. Zudem werden ihnen sehr oft nur
+        unfaire Preise geboten, jedoch sind sie dazu gezwungen
+        sich auf den Preis einzulassen. Ansonsten besteht die
+        Gefahr, dass das der letzte Händler sein könnte der sie
+        für einen Deal kontaktiert. Es würde zu keinem Verkauf führen, die Ernte geht schlecht und sie verschulden sich.
+    </p>
+    <p>
+        Dafür muss die Landwirtschaft digitalisiert werden. Der Landwirt registriert sich und stellt seine Ernte ins Netz.
+        Aus dieser Datenbank können dann Händler suchen und nach Preis, Entfernung und/oder Qualität sich für den besten Anbieter entscheiden.
 
-    <div>
-        <form class="form-horizontal">
-            <fieldset>
-
-                <!-- Form Name -->
-                <legend>Filter </legend>
-
-                <!-- Select Basic -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="selectbasic">Select Place/City</label>
-                    <div class="col-md-4">
-                        <select id="selectbasic" name="selectbasic" class="form-control">
-                            <option value="1">Option one</option>
-                            <option value="2">Option two</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Button Drop Down -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="buttondropdown">Select Types of Product</label>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="placeholder" type="text">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                    Action
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">Option one</a></li>
-                                    <li><a href="#">Option two</a></li>
-                                    <li><a href="#">Option three</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Multiple Checkboxes -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="checkboxes">Special Requests</label>
-                    <div class="col-md-4">
-                        <div class="checkbox">
-                            <label for="checkboxes-0">
-                                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                                GMO Free
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label for="checkboxes-1">
-                                <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
-                                Organic
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!-- Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="singlebutton">Search</label>
-                    <div class="col-md-4">
-                        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Apply</button>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+    </p>
 </div>
+
 <div>
     <div>
         <div class="tbay-offcanvas-body">
@@ -122,10 +59,5 @@
             </nav>
         </div>
     </div>
-</div>
-<div>
-    <ul class="list-group">
-        <li class="list-group-item list-group-item-light">Mushrooms</li>
-    </ul>
 </div>
 {% endblock content %}
